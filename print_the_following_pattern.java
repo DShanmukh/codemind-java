@@ -1,16 +1,27 @@
 import java.util.Scanner;
-class Naruto{
-public static void main(String args[])
+class Naruto
 {
-Scanner sc =new Scanner(System.in);
-   int i, j, rows;
-   rows=sc.nextInt();
-   for (i = rows; i >= 1; --i) {
-      for (j = 1; j <= i; ++j) {
-         System.out.printf("%d", j);
-      }
-      System.out.printf("
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n,i,j;
+        n=sc.nextInt();
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                if(i==j)
+                {
+                    System.out.printf("0");
+                }
+                else
+                {
+                    System.out.printf("x");
+                }
+            }
+            System.out.printf("
 ");
-   }
-}
+        }
+        
+    }
 }
