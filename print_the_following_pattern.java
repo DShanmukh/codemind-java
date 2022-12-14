@@ -1,18 +1,26 @@
-import java.util.*;
-class Naruto
+import java.util.Scanner;
+class Pattern
 {
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
         int n;
         n=sc.nextInt();
-        int i,j;
+        int i,j,k;
         for(i=1;i<=n;i++)
         {
-            for(j=1;j<=n;j++)
+            for(j=1;j<=n-i;j++)
             {
-                System.out.print((char)(i+64)+" ");
+                System.out.print(" ");
             }
+            for(j=1;j<=i;j++)
+            {
+                System.out.print(i);
+            }
+            for(j=i-1;j>=1;j--)
+        		{
+     				System.out.print(i);
+			} 	
             System.out.print("
 ");
         }
