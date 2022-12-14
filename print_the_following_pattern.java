@@ -1,5 +1,5 @@
-import java.util.Scanner;
-class Main
+import java.util.*;
+class Naruto
 {
     public static void main(String args[])
     {
@@ -7,13 +7,13 @@ class Main
         int n;
         n=sc.nextInt();
         int i,j;
-        for(i=0;i<n;i++)
+        for(i=1;i<=n;i++)
         {
-        for(j=n;j>0;j--)
-        {
-            System.out.printf("%d ",j);
-        }
-        System.out.printf("
+            for(j=1;j<=n;j++)
+            {
+                System.out.print((char)(i+64)+" ");
+            }
+            System.out.print("
 ");
         }
     }
