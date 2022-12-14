@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Pattern
+class Naruto
 {
     public static void main(String args[])
     {
@@ -7,11 +7,11 @@ class Pattern
         int n;
         n=sc.nextInt();
         int i,j;
-        for(i=1;i<=n;i++)
+        for(i=n;i>=1;i--)
         {
             for(j=1;j<=i;j++)
             {
-                System.out.print(j);
+                System.out.printf("%c ",(char)(64+i));
             }
             System.out.print("
 ");
